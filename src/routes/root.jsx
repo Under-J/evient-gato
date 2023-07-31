@@ -1,23 +1,24 @@
-import { Outlet, Link } from 'react-router-dom';
-
+import { Outlet } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import { pagePaths } from '../pages';
 
 export function Root() {
   return (
     <div className="row h-100">
-      <div id="sidebar" className="col-3 border h-100">
+      <div id="sidebar" className="col-2 border p-4 h-100">
         <nav>
-          <ul>
+          <ul style={{listStyleType:'none'}}>
             <li>
-              <Link to={pagePaths.home}>Home</Link>
+              <Button href={pagePaths.home}>Home</Button>
             </li>
+            <br/>
             <li>
-              <Link to={pagePaths.createNewPlayer}>Create new player</Link>
+              <Button href={pagePaths.createNewPlayer}>Create new player</Button>
             </li>
           </ul>
         </nav>
       </div>
-      <div id="detail" className="col-9 h-100 border border-primary">
+      <div id="detail" className="border col-9 h-100">
         <Outlet />
       </div>
     </div>

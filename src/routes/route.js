@@ -7,7 +7,7 @@ import {
   CreateNewPlayer,
   ChoosePlayers,
 } from '../pages';
-import { Root } from '../routes/root';
+import { Root } from './root';
 
 export const router = createBrowserRouter([
   {

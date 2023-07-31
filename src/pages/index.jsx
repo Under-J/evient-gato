@@ -1,7 +1,8 @@
 import { Home } from './home';
-import { Match } from './match';
+import { Match } from './match.tsx';
 import { pagePaths } from './pagePaths';
-import { CreateNewPlayer } from './create-new-player';
-import { ChoosePlayers } from './choose-players';
+import { CreateNewPlayer } from '../components/create-new-player.tsx';
+import { ChoosePlayers } from './choose-players.tsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export { Home, Match, pagePaths, CreateNewPlayer, ChoosePlayers };
+export { Home, Match, pagePaths, CreateNewPlayer, ChoosePlayers};
